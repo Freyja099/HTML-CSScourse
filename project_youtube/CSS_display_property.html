@@ -1,0 +1,113 @@
+<!-- * session 8 : CSS display property -->
+
+<!-- *
+* In HTML there are three types of elements :
+* 1. Block element : it takes up the entire line ( paragraph for e.g is by default a block element )
+* 2. Inline element : appear within a line of text, it takes up the space as much as it needs ( a span for example is by default an inline element )
+* 3. Inline-block element : it takes up the space as much as it needs but it behaves like a block element ( a div for example is by default an inline-block element,also images and textbox )
+*-->
+
+
+<!-- *
+ * We can use the CSS property called display to easily switch between block and inline-block 
+ * first let's switch from block => inline-block
+ * by writing in CSS code for the element we want : display : inline-block;
+ * the next example will show the difference before & after using display property
+ *-->
+
+ <!DOCTYPE html>
+ <html>
+
+ <head>
+<title> Display property CSS </title>
+<style>
+.text_1_after,
+.text_2_after,
+.text_3_after
+{
+    display: inline-block;
+    font-weight: bold;
+}
+
+</style>
+ </head>
+ 
+ <body>
+<p class="text_1_before">
+    Talking Tech and AI with Google CEO Sundar Pichai!
+</p>
+
+<p class="text_2_before">
+    Marques Brownlee
+</p>
+
+<p class="text_3_before">
+    3.4M views &#183 6 months ago
+</p>
+
+
+<p class="text_1_after">
+    Talking Tech and AI with Google CEO Sundar Pichai!
+</p>
+
+<p class="text_2_after">
+    Marques Brownlee
+</p>
+
+<p class="text_3_after">
+    3.4M views &#183 6 months ago
+</p>
+
+ </body>
+ 
+ </html>
+
+ <!-- * now from  the inline-block => block -->
+ <!-- * We can do the same for images using this time display:block to have the pic in one line-->
+
+ <br>
+ <html>
+    <head>
+<style>
+.img_before_display
+{
+    width: 300px;
+}
+.img_after_display
+{
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.search-box_after,
+.img_after_display
+{
+    display: block;
+}
+</style>
+    </head>
+
+    <body>
+        <img src="thumbnail/thumbnail-1.webp" class="img_before_display">
+        
+        <input
+        class="search-box_before"
+        type="text"
+        placeholder="search"
+        />
+
+        <br>
+        <br>
+        <br>
+
+        <img src="thumbnail/thumbnail-1.webp" class="img_after_display">
+        <input
+        class="search-box_after"
+        type="text"
+        placeholder="search"
+        />
+    </body>
+ </html>
+
+ <!-- * Using devtools will show us clearly the difference -->
+  

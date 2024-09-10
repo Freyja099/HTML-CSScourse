@@ -1,0 +1,171 @@
+<!-- ! Session 6 : HTML structure-->
+<!-- * we going to learn now the right HTML structure -->
+ <!-- * we will use the HTML doctype -->
+  
+<!-- * Every HTML file is going to start with : <!DOCTYPE html> -->
+ <!-- <!DOCTYPE html> --> 
+
+<!-- * 
+ * This tells a browser to use a modern version of html 
+ * if we don't have this we going to miss a lot of features 
+ *-->
+
+ <!-- *
+  * The next part of these structure is to create an HTML element
+  *  <html> ....  </html>
+  * this says there's a webpage inside this element
+  * inside this we going to create the head element
+  !<html> 
+    * <head> .... </head>
+    * <body> .... </body>
+  !</html> 
+  *-->
+<!-- * This is the proper structure of all of our HTML files 
+* we can  see that we have an element inside another element this is called
+* nesting 
+* every file has one and only one HTML element <html> = a web page
+* and this element represents the entire webpage , the html element is 
+* designed for nesting, it's designed to contain one head element and one
+* body element, and then everything on our webpage is supposed to go either inside 
+* the head or the body element 
+* the body element contains all elements that are visible
+* the head element is used to contain meta information about the webpage
+* ( the element that are not visible on our webpage ) for e.g : <title>...</title>
+* it will change the text in the tab
+* the second feature for following the structure is the ability to automatically
+* reload our webpage whenever we change our code
+* -->
+<!-- * We'll try to write the first part of button.html file in the correct structure -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> Button </title>
+        <link rel="stylesheet" href="styles/HTML_stucture.CSS">
+    </head>
+
+
+    <body>
+
+        <button class="SUBSCRIBE-button">
+            SUBSCRIBE
+       </button>
+      
+       <button class="JOIN-button" > 
+           JOIN 
+       </button>
+       
+       <button class="Twitter-button"> 
+           Twitter
+       </button>
+
+    </body>
+
+</html>
+<!--* the style doesn't really show on the page that's why we put it inside the head element -->
+<!-- !
+ ! we can see that we can get confused if we use both html and css at the same file that's why 
+ ! we going to start writing css on another file that ends with .CSS
+ ! and then link it to our html file with the <link> tag it doesn't required to be closed
+ ! elements like these are called "void elements" = don't need a closing tag
+ ! this link element takes two attributes the first one is called "rel" which stands for relation
+ ! the second one is called "href" which stands for hypertext reference
+ ! in our case we are linking our CSS file to our HTML file
+ ! the "rel" attribute is used to specify the relationship between the current document and the linked document
+ ! the "href" attribute is used to provide the URL of the linked document
+ !-->
+<!-- * 
+ * To link a file in the same folder we can just use the name of the file but if it was in a different 
+ * folder we have to write first the folder's name then slash /then the file's name 
+ * This is called filepaths and this is basically how we locate different files within our HTML code
+ * -->
+
+ <!-- *
+  * Another feature for using the structure is the ability to add a new fonts into our website
+  * websites have a set of fonts by default that we can use for example : Arial, Times New Roman, so in addition to
+  * the default fonts we can use other fonts as well we can upload from the internet ( google fonts )
+  * there we can find the link we can copy and use it in the head element and then write in the CSS code the new font
+  * we wanted and wasn't available
+  * -->
+
+  <!--
+   Features we get for using the structure : 
+  1- <title>
+  2- live server
+  3- link CSS files
+  4- Add new fonts and more 
+  -->
+
+<!-- TODO : Ex 6 -->
+ <!-- TODO : 6a;6b;6c -->
+
+<!-- TODO changing ex 4a to 4e -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            4a
+        </title>
+        <link rel="stylesheet" href="styles/4a_to_4e.CSS">
+    </head>
+
+    <body>
+        <button class="uber-button">
+            Request now
+        </button>
+        
+        <button class="amazon-button">
+            Add to Cart
+        </button>
+        
+        <button class="github-button">
+            Sign up
+        </button>
+        
+        <button class="bootstrap1-button">
+            Get started
+        </button>
+        <button class="bootstrap2-button">
+            Download
+        </button>
+        
+        <button class="linkedln1-button">
+            Apply on company website
+        </button>
+        <button class=" linkedln2-button">
+            Save
+        </button>
+        <br>
+        <br>
+    </body>
+</html>
+
+<!-- TODO : Ex 6d -->
+
+<br>
+<br>
+
+<!DOCTYPE html>
+<head>
+    <title> exercice 6d </title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="styles/6d.CSS">
+</head>
+
+<body>
+    <p class=" title_p "> 
+        Model 3 
+    </p>
+    <p class="text_p">
+        Order Online for <u>Touchless Delivery</u> 
+    </p>
+</body>
+<html>
+
+<!-- TODO end of the exercise -->

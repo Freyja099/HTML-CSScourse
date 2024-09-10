@@ -1,0 +1,13 @@
+/* 8a */
+.email_8a,
+.name_8a
+{
+display: block;
+}
+
+.name_8a
+{
+    margin-bottom: 4px;
+    border-radius: 1px;
+    border-style: bold;
+}

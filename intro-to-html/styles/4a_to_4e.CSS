@@ -1,0 +1,144 @@
+.uber-button
+    {
+        background-color: black;
+        border: none;
+        color: white;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 17px;
+        padding-right: 17px;
+        margin-left:  16px ;
+        cursor: pointer;
+    }
+    .uber-button:hover
+    {
+        opacity: 0.75;
+    }
+    
+    .amazon-button
+    {
+        background-color: rgb(255,216,20);
+        color: black;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 65px;
+        padding-right: 65px;
+        border: none;
+        border-radius: 95px;
+        cursor: pointer;
+        margin-left: 16px;
+        font-size: 15px;
+    }
+    .amazon-button:hover
+    {
+        background-color: rgb(224, 186, 0);
+    }
+    .github-button
+    {
+        background-color: rgb(46,164,79) ;
+        color:white;
+        border: none;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 29px;
+        padding-left: 29px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-left: 16px;
+        font-weight: bold;
+        font-size: 13px;
+        transition: box-shadow 1s;
+
+    }
+    .github-button:hover
+    {
+        box-shadow: 5px 10px  6px rgba(0,0,0,0.15) ;
+    }
+    .bootstrap1-button
+    {
+        background-color: rgb(121,82,179);
+        border: none;
+        color:white;
+        font-weight: bold;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 27px;
+        padding-right: 27px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 16px;
+        transition: background-color 0.75s;
+    }
+    .bootstrap1-button:hover
+    {
+        background-color:rgb(80, 24, 164) ;
+    }
+    .bootstrap2-button
+    {
+        background-color: white;
+        border-color:rgb(108,117,125) ;
+        color: rgb(108,117,125);
+        border-width: 1px;
+        font-size: 15px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        border-style: solid;
+        font-weight: bold;
+        margin-left: 6px;
+        transition: background-color 0.5s , color 0.5s;
+    }
+    .bootstrap2-button:hover
+    {
+        background-color: rgb(108,117,125);
+        color : white;
+    }
+    .linkedln1-button
+    {
+        background-color: rgb(10,102,194);
+        color:white;
+        font-weight: bold ;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 26px;
+        padding-right: 26px;
+        cursor: pointer;
+        border:none;
+        border-radius: 120px;
+        margin-left: 16px;
+        transition: background-color 0.4s;
+    }
+    .linkedln1-button:hover
+    {
+        background-color: rgb(4, 72, 140);
+    }
+    
+    .linkedln2-button
+    {
+        background-color: white;
+        color:rgb(10,102,194) ;
+        border-color: rgb(10,102,194);
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: bold ;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 6px;
+        border-radius: 36px;
+        transition: border-width 0.15s , background-color 0.15s;
+        margin-right: 20px ;
+    
+    }
+    .linkedln2-button:hover
+    {
+        border-width: 3px;
+        background-color: rgb(226, 240, 254);
+    }

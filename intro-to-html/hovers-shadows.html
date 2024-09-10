@@ -1,0 +1,365 @@
+<!-- session 3 : hover- transitions and shadows -->
+
+<style>
+    .SUBSCRIBE1-button
+    {
+       background-color: rgb(186, 10, 10);
+       color: white;
+       border: none ;
+       height: 35px ;
+       width: 100px  ;
+       border-radius: 3px ;
+       cursor: pointer;
+    }
+    .SUBSCRIBE1-button:hover
+    {
+        background-color: rgb(104, 32, 32);
+        color: black;
+    }
+
+    .SUBSCRIBE1-button:active
+    {
+        background-color: blue;
+    }
+
+    .JOIN-button 
+    {
+    background-color: white ;
+    border-color: rgb(80, 162, 195) ;
+    border-style: solid;
+    border-width: 1px ;
+    color:rgb(80, 162, 195) ;
+    height: 38px ;
+    width: 65px  ;
+    border-radius: 3px ;
+    cursor: pointer;
+    margin-right: 7px ;
+    transition: background-color 1s , color 2s ;
+
+    }
+    .JOIN-button:hover
+    {
+        background-color: rgb(80, 162, 195)  ;
+        color: white;
+    }  
+
+    .Twitter-button
+    {
+    background-color: rgb(0, 140, 179);
+    color:white ;
+    border: none;
+    border-radius: 19px ;
+    border-width: 1px ;
+    border-style: solid;
+    height: 38px;
+    width: 70px;
+    cursor: pointer;
+    margin-right: 7px ;
+    font-weight: bold;
+    font-size: 15px;
+    transition: box-shadow 0.15s;
+    }
+    .Twitter-button:hover
+    {
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    }
+
+
+     
+</style>
+
+<style>
+    .SUBSCRIBE2-button
+    {
+       background-color: rgb(186, 10, 10);
+       color: white;
+       border: none ;
+       height: 35px ;
+       width: 100px  ;
+       border-radius: 3px ;
+       cursor: pointer;
+       transition: opacity 1s;
+    }
+    .SUBSCRIBE2-button:hover
+    {
+        opacity: 0.7;
+    }
+    .SUBSCRIBE2-button:active
+    {
+        opacity: 0.3;
+    }
+</style>
+
+
+<button class="SUBSCRIBE1-button">
+     SUBSCRIBE 
+</button>
+
+
+<button class="JOIN-button" > 
+    JOIN 
+</button>
+
+<button class="Twitter-button"> 
+    Twitter
+</button>
+
+<button class="SUBSCRIBE2-button">
+    SUBSCRIBE 
+</button>
+<!--
+*_the transition in SUBSCRIBE2-button is meant to make the opacity change smoothly 
+*the perfect time will be 0.15s 
+*_we shouldn't put the instructions of transition in the hover section because
+*as soon as we take off the hover the transition won't take place anymore
+*_the property of shadow is box-shadow and it takes 4 values : the first value determines 
+*the horizontal position of the shadow , the second value sets the vertical position of the shadow
+*and the third value is the blur , the last value is the color of shadow we can use here 
+*the rgba the a stands for the opacity or how see through this color is (it's the last value)
+*-->
+<!-- ?exercise 3 -->
+
+<style>
+    .uber-button
+    {
+        background-color: black;
+        border: none;
+        color: white;
+        height: 30px;
+        width: 124px;
+        margin-left:  16px ;
+        cursor: pointer;
+    }
+    .uber-button:hover
+    {
+        opacity: 0.75;
+    }
+    
+    .amazon-button
+    {
+        background-color: rgb(255,216,20);
+        color: black;
+        height: 30px;
+        width: 170px;
+        border: none;
+        border-radius: 95px;
+        cursor: pointer;
+        margin-left: 16px;
+        font-size: 15px;
+    }
+    .amazon-button:hover
+    {
+        background-color: rgb(224, 186, 0);
+    }
+    .github-button
+    {
+        background-color: rgb(46,164,79) ;
+        color:white;
+        border: none;
+        height: 40px;
+        width: 100px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-left: 16px;
+        font-weight: bold;
+        font-size: 13px;
+        transition: box-shadow 1s;
+
+    }
+    .github-button:hover
+    {
+        box-shadow: 5px 10px  6px rgba(0,0,0,0.15) ;
+    }
+    .bootstrap1-button
+    {
+        background-color: rgb(121,82,179);
+        border: none;
+        color:white;
+        font-weight: bold;
+        height: 40px;
+        width: 150px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 16px;
+        transition: background-color 0.75s;
+    }
+    .bootstrap1-button:hover
+    {
+        background-color:rgb(80, 24, 164) ;
+    }
+    .bootstrap2-button
+    {
+        background-color: white;
+        border-color:rgb(108,117,125) ;
+        color: rgb(108,117,125);
+        border-width: 1px;
+        font-size: 15px;
+        height: 40px;
+        width: 150px;
+        border-radius: 5px;
+        cursor: pointer;
+        border-style: solid;
+        font-weight: bold;
+        margin-left: 6px;
+        transition: background-color 0.5s , color 0.5s;
+    }
+    .bootstrap2-button:hover
+    {
+        background-color: rgb(108,117,125);
+        color : white;
+    }
+    .linkedln1-button
+    {
+        background-color: rgb(10,102,194);
+        color:white;
+        font-weight: bold ;
+        height: 40px;
+        width: 250px;
+        cursor: pointer;
+        border:none;
+        border-radius: 120px;
+        margin-left: 16px;
+        transition: background-color 0.4s;
+    }
+    .linkedln1-button:hover
+    {
+        background-color: rgb(4, 72, 140);
+    }
+    
+    .linkedln2-button
+    {
+        background-color: white;
+        color:rgb(10,102,194) ;
+        border-color: rgb(10,102,194);
+        border-width: 1px;
+        border-style: solid;
+        height: 40px;
+        width: 80px;
+        font-weight: bold ;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 6px;
+        border-radius: 36px;
+        transition: border-width 0.15s , background-color 0.15s;
+    
+    }
+    .linkedln2-button:hover
+    {
+        border-width: 3px;
+        background-color: rgb(226, 240, 254);
+    }
+    </style>
+    
+    <button class="uber-button">
+        Request now
+    </button>
+    
+    <button class="amazon-button">
+        Add to Cart
+    </button>
+    
+    <button class="github-button">
+        Sign up
+    </button>
+    
+    <button class="bootstrap1-button">
+        Get started
+    </button>
+    <button class="bootstrap2-button">
+        Download
+    </button>
+    
+    <button class="linkedln1-button">
+        Apply on company website
+    </button>
+    <button class=" linkedln2-button">
+        Save
+    </button>
+    
+   <!-- ?2.F --> 
+    
+    <style>
+        
+        .p1 
+        {
+            font-size: 40px;
+            color: black;
+            font-weight: bold;
+        
+        }
+    
+        .p2 
+        {
+            font-size: 20px;
+            color: rgb(0,118,0);
+            font-weight: bold;
+        }
+    
+        .p3
+        {
+            color: black;
+            font-size: 25px;
+    
+        }
+        .f1-button
+        {
+            background-color: rgb(255,216,20);
+            color:black;
+            border: none;
+            height: 30px;
+            width: 120px;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .f1-button:hover
+        {
+            background-color: rgb(233, 196, 11) ;
+        }
+        .f1-button:active
+        {
+            opacity: 0.42;
+        }
+        .f2-button
+        {
+            background-color: rgb(255,164,28);
+            color:black;
+            border: none;
+            height: 30px;
+            width: 120px;
+            border-radius: 60px;
+            cursor: pointer;
+            margin-left: 6px;
+            transition: background-color 0.3s;
+        }
+        .f2-button:hover
+        {
+            background-color: rgb(225, 148, 32);
+        }
+        .f2-button:active
+        {
+            opacity: 0.42;
+        }
+        .ref-a
+        {
+            color:rgb(0,113,133);
+            margin-top: 80px;
+            transition: color 0.5s;
+        }
+        .ref-a:hover
+        {
+            color : rgb(155, 63, 63);
+        }
+        
+    </style>
+    
+    
+    <a href="https://www.amazon.com/" class="ref-a" target="_blank">  Back to Amazon </a>
+    <p class="p1"> Nick Black Running Shoes </p>
+    <p class="p2">$39-in stock. </p>
+    <p class="p3"> Free delivery tomorrow </p>
+    <button class="f1-button"> Add To Cart </button>
+    <button class="f2-button"> Buy Now </button>
+    
+  <!-- ?End of exercise -->  

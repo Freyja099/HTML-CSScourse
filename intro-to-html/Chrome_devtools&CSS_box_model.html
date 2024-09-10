@@ -1,0 +1,462 @@
+<!--
+* To find the devtools we go to our website and click in the empty area and 
+* we're going to click "inspect" : we can see all the HTML on our page, so this
+* is a great way to visualize the HTML as well as the CSS on our page
+
+* the other way to measure color beside rgb(r stands for red , g for green , b for blue) 
+* is hex : the first two characters represent how much red and so go on #RRGGBB 
+* -CSS box model: 
+* Allow us to add space between our elements or to add space inside our element to make it bigger
+* We already used margin : we can use that for right, left , top or bottom
+* For adding space inside the button we use padding : padding-right, left, bottom,top
+
+
+
+* If we use the devtools go to computed we will find the box model
+
+* To resume the CSS box model determines :
+*	- How much space an element takes up
+*	- How far it is away from other elements
+
+* In our code we can change the width and height by giving mesures using box model
+
+*-->
+
+<style>
+    .SUBSCRIBE2-button
+    {
+       background-color: rgb(230, 33, 23);
+       color: white;
+       border: none ;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       padding-left: 16px;
+       padding-right: 16px;
+       border-radius: 3px ;
+       cursor: pointer;
+       transition: opacity 1s;
+       vertical-align: top;
+    }
+    .SUBSCRIBE2-button:hover
+    {
+        opacity: 0.7;
+    }
+    .SUBSCRIBE2-button:active
+    {
+        opacity: 0.3;
+    }
+</style>
+
+
+<!-- *
+________________________________________________________
+*The main reason to use padding instead the width and height is that if we change the text to something longer the button will resize with the text but it will keep the size in the inside , it's a better alternative to height and width
+
+*To align all  the button we can add a property called vertical-align :top ; in the CSS
+*-->
+<style>
+.JOIN-button 
+{
+background-color: white ;
+border-color: rgb(80, 162, 195) ;
+border-style: solid;
+border-width: 1px ;
+color:rgb(80, 162, 195) ;
+       padding-top: 9px;
+       padding-bottom: 9px;
+       padding-left: 16px;
+       padding-right: 16px;
+border-radius: 3px ;
+cursor: pointer;
+margin-right: 7px ;
+transition: background-color 1s , color 2s ;
+vertical-align: top;
+}
+.JOIN-button:hover
+{
+    background-color: rgb(80, 162, 195)  ;
+    color: white;
+}  
+
+.Twitter-button
+{
+background-color: rgb(0, 140, 179);
+color:white ;
+border: none;
+border-radius: 19px ;
+border-width: 1px ;
+border-style: solid;
+       padding-top: 9px;
+       padding-bottom: 9px;
+       padding-left: 16px;
+       padding-right: 16px;
+cursor: pointer;
+margin-right: 7px ;
+font-weight: bold;
+font-size: 15px;
+transition: box-shadow 0.15s;
+vertical-align: top;
+}
+.Twitter-button:hover
+{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+
+
+ 
+</style>
+
+<button class="SUBSCRIBE2-button">
+    SUBSCRIBE 
+</button>
+
+<button class="JOIN-button" > 
+    JOIN 
+</button>
+
+<button class="Twitter-button"> 
+    Twitter
+</button>
+
+<!-- *
+* After adjusting the JOIN button to the same padding of the SUBSCRIBE button
+* we can see that the JOIN button looks a bit taller even if they have the same
+* padding mesure and that's because the border actually adds a little a bit of 
+* size to this button 1pixel on the top and bottom so to compensate we can reduce 
+*the padding at the top and bottom by one instead of 10px we use 9px.
+*-->
+
+<!-- ? Exercise 4 -->
+ <!-- ? 4a to 4e-->
+<!-- * Modify the ex 3 from a to e by changing width and height by padding-->
+<style>
+    .uber-button
+    {
+        background-color: black;
+        border: none;
+        color: white;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 17px;
+        padding-right: 17px;
+        margin-left:  16px ;
+        cursor: pointer;
+    }
+    .uber-button:hover
+    {
+        opacity: 0.75;
+    }
+    
+    .amazon-button
+    {
+        background-color: rgb(255,216,20);
+        color: black;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 65px;
+        padding-right: 65px;
+        border: none;
+        border-radius: 95px;
+        cursor: pointer;
+        margin-left: 16px;
+        font-size: 15px;
+    }
+    .amazon-button:hover
+    {
+        background-color: rgb(224, 186, 0);
+    }
+    .github-button
+    {
+        background-color: rgb(46,164,79) ;
+        color:white;
+        border: none;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-right: 29px;
+        padding-left: 29px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-left: 16px;
+        font-weight: bold;
+        font-size: 13px;
+        transition: box-shadow 1s;
+
+    }
+    .github-button:hover
+    {
+        box-shadow: 5px 10px  6px rgba(0,0,0,0.15) ;
+    }
+    .bootstrap1-button
+    {
+        background-color: rgb(121,82,179);
+        border: none;
+        color:white;
+        font-weight: bold;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 27px;
+        padding-right: 27px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+        margin-left: 16px;
+        transition: background-color 0.75s;
+    }
+    .bootstrap1-button:hover
+    {
+        background-color:rgb(80, 24, 164) ;
+    }
+    .bootstrap2-button
+    {
+        background-color: white;
+        border-color:rgb(108,117,125) ;
+        color: rgb(108,117,125);
+        border-width: 1px;
+        font-size: 15px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        border-style: solid;
+        font-weight: bold;
+        margin-left: 6px;
+        transition: background-color 0.5s , color 0.5s;
+    }
+    .bootstrap2-button:hover
+    {
+        background-color: rgb(108,117,125);
+        color : white;
+    }
+    .linkedln1-button
+    {
+        background-color: rgb(10,102,194);
+        color:white;
+        font-weight: bold ;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 26px;
+        padding-right: 26px;
+        cursor: pointer;
+        border:none;
+        border-radius: 120px;
+        margin-left: 16px;
+        transition: background-color 0.4s;
+    }
+    .linkedln1-button:hover
+    {
+        background-color: rgb(4, 72, 140);
+    }
+    
+    .linkedln2-button
+    {
+        background-color: white;
+        color:rgb(10,102,194) ;
+        border-color: rgb(10,102,194);
+        border-width: 1px;
+        border-style: solid;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: bold ;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 6px;
+        border-radius: 36px;
+        transition: border-width 0.15s , background-color 0.15s;
+        margin-right: 20px ;
+    
+    }
+    .linkedln2-button:hover
+    {
+        border-width: 3px;
+        background-color: rgb(226, 240, 254);
+    }
+    </style>
+    
+    <button class="uber-button">
+        Request now
+    </button>
+    
+    <button class="amazon-button">
+        Add to Cart
+    </button>
+    
+    <button class="github-button">
+        Sign up
+    </button>
+    
+    <button class="bootstrap1-button">
+        Get started
+    </button>
+    <button class="bootstrap2-button">
+        Download
+    </button>
+    
+    <button class="linkedln1-button">
+        Apply on company website
+    </button>
+    <button class=" linkedln2-button">
+        Save
+    </button>
+    <br>
+    <br>
+    <!-- ?Chanlenge exercise -->
+     <!-- 4.h -->
+
+  
+
+  <style>
+    .Back-button
+    {
+        
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: 14px;
+        margin-left: 14px;
+        
+        
+    }
+   .Next-button
+   {
+        
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: 14px;
+        margin-left: 14px;
+        
+        
+    }
+    .num-a
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+  </style>
+
+<button class=" Back-button ">
+    Back
+  </button>  
+<a class="num-a"> 
+1 2 3 4 5
+</a>
+
+  <button class=" Next-button">
+    Next
+  </button>
+    
+ <br>
+ <br>
+ 
+ <!-- 4.i -->
+  <style>
+    .stretch-button
+    {
+        font-size: 17px;
+        color: white;
+        background-color: rgb(19, 126, 20);
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 27px;
+        padding-right: 27px;
+        border: none; 
+        transition: 0.5s;
+        cursor: pointer;
+    }
+   .stretch-button:hover
+   {
+        padding-top: 19px;
+        padding-bottom: 19px;
+        padding-left: 48px;
+        padding-right: 48px ;
+        
+    }
+    
+  </style>
+
+  <button class="stretch-button">
+        Stretch
+  </button>
+
+  <br>
+  <br>
+  <!--4.j-->
+<button class="shadow-button">
+Shadow
+</button>
+
+<style>
+    .shadow-button
+    {
+        font-size: 17px;
+        color: white;
+        background-color: rgb(19, 126, 20);
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 27px;
+        padding-right: 27px;
+        border: none; 
+        transition: 0.5s;
+        cursor: pointer;
+        margin-left: 30px;
+        box-shadow: 7px 7px 4px rgba(0,0,0,0.15);
+    }
+    
+    .shadow-button:active
+    {
+        margin-left:33px;
+        margin-top: 3px;
+        box-shadow: none ;
+        transition: box-shadow 0.5s;
+    }
+</style>
+
+<br>
+<br>
+<br>
+<!--4k-->
+<style>
+    .stretch2-button {
+      background-color: green;
+      color: white;
+      border: none;
+      font-size: 18px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      cursor: pointer;
+  
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+   
+      transition: padding 0.15s,
+        margin 0.15s;
+    }
+  
+    .stretch2-button:hover {
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  </style>
+  
+  <button class="stretch2-button">
+    One
+  </button>
+  <button class="stretch2-button">
+    Two
+  </button>
+  <button class="stretch2-button">
+    Three
+  </button>
+  <!-- ?End of exercise -->  
+  

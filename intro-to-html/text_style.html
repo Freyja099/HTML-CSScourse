@@ -1,0 +1,506 @@
+<!--* text style -->
+<!-- * We 're working with an exercise from the website:
+ * https://supersimple.dev/exercises/text-->
+<style>
+    .video-title
+    {
+        font-family:Arial ;
+        font-size: 18px;
+        font-weight: bold;
+        width:284px;
+        line-height: 24px;
+        font-style: normal;
+        margin-bottom: 2px;
+        margin-top: 0px;
+    }
+</style>
+<p class="video-title">
+    Talking Tech and AI with Google CEO Sundar Pichai!
+</p>
+
+<!-- *
+ *to creat the dot we have to use something calles an HTML entity 
+ *we can search for that in google : html entity middle dot
+ * the HTML code is : &#183; 
+ * -->
+
+<p class="video-stats">
+3.4M views &#183; 6 months ago
+</p>
+
+<style>
+    .video-stats
+    {
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 14px;
+       color: #606060;
+       margin-bottom: 16px;
+       line-height: 1.5px;
+       font-weight: 400px;
+    }
+</style>
+
+<p class="name-p">
+    Marques Brownlee &#10003; 
+</p>
+<!-- *the HTML entity of the check mark: &#10003; -->
+<style>
+    .name-p
+    {
+        width: 284px;
+        height: 21px;
+        font-weight: 400;
+        line-height: 1.5;
+        font-family: Arial;
+        font-size: 14px;
+        margin-top: 0;
+        color: #606060;
+        margin-bottom: 16px;
+    }
+</style>
+
+<p class="video-description">
+    Talking tech and AI on the heels of Google I/O. Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!
+</p>
+
+<style>
+    .video-description
+    {
+    width: 284px;
+    height:60px;
+    font-family: Arial;
+    font-size: 14px;
+    color: #606060;
+    line-height: 20px;
+    margin-bottom: 0;
+    }
+    
+</style>
+
+<!-- * to apply the same style to all paragraph we can use p {....}-->
+<!-- *in this case all the paragraph use the same font-family -->
+ <style>
+    p
+    {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+ </style>
+ <!-- *
+ * if we use this we can remove the line in each style paragraph
+ * that indiates the font size 
+  * -->
+  <!-- * <p> with default come with margin at the top and bottom -->
+<!-- *
+ *CSS specifity : if we have multiple lines setting the same property there's a 
+ *priority that the browser follows (the word before the brackets has more priority 
+ * it's called the selector and the selector that's the more specific has higher priority )
+ * for example if we compare the p selector that target all paraghraphs and another one 
+ * that target a small group of element saying for example .video-title , the second selector 
+ * will have higher priority and will be applied
+ * to resume the class name selector > the elemet name selector
+ *-->
+
+ <BR>
+ <!-- todo : the apple button -->
+  <p class="apple_button">
+    Shop early for the best selection of holiday favourites.
+    <a target="_blank" class="apple_a">
+        Shop now >
+    </a>
+</p>
+<!-- !
+ ! Do not put the link in this case 
+ ! href="https://www.apple.com/"
+ ! the text will be underline all the time 
+ ! and blue because you already visited the link
+ ! also in the actual page if we click on it nothing happens
+ !-->
+
+  <style>
+    .apple_button
+    {
+        background-color: rgb(227, 65, 64);
+        color: white;
+        width: 916.8;
+        height: 21px;
+        padding: 16px;
+        margin-bottom:16px ;
+        margin-left: 8px;
+        margin-right: 8px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height :21px;
+        text-align: center;
+        cursor: text;
+        
+    }
+    
+    .apple_a
+    {
+        cursor: pointer;
+    }
+    .apple_a:hover
+    {
+        text-decoration: underline;
+    }
+    
+  </style>
+  <!--  ?
+   ? : on the first text the cursor : text , for the anchor element the cursor : pointer
+    ? : now for the background the cursor should stay normal
+     ?-->
+        <!-- padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 260px;
+        padding-right: 260px; -->
+<br>
+    <!-- *
+     * if we want to change the weight for example of a word in the paragraph without changing
+     * the whole sentence there's actually something called the text elements : like if we want the 
+     * word to be bold we just have to write the sentence and <strong> word </strong> or if we want to
+     * underline a word we use <u> word </u>
+     * to resume the text element is used when we want to modify that part of the text and not the whole thing
+     * * for the span element : <span> word <span> it's the most generic text element it has no style 
+     * the span is really useful we can actually give it a class and style it differently  
+     *-->
+
+     <!-- ! in the exercise I should have used the span element instead of the anchor because in this case
+     ! it's not a site but since it look the same I won't change it 
+     !-->
+<!-- TODO here's the other method as it is shown in the ytb video-->
+<p class="apple_button2">
+    Shop early for the best selection of holiday favourites. <span class="apple_span"> Shop now &#62 </span>
+</p>
+
+<style>
+    .apple_button2
+    {
+        background-color: rgb(227, 65, 64);
+        color: white;
+        width: 916.8;
+        height: 21px;
+        padding: 16px;
+        margin-bottom:16px ;
+        margin-left: 8px;
+        margin-right: 8px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height :21px;
+        text-align: center;
+        cursor: text;
+
+    }
+
+    .apple_span:hover
+    {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+</style>
+
+<!-- * 
+ *to add more space between our words we can use the span for the word we want it to have more space than the 
+ *the others then use margin in CSS
+ *-->
+ <br>
+<!-- TODO : Exercises 5-->
+
+<!-- TODO 5a -->
+<p class=" a_p "> This is Tahoma Font </p>
+<style>
+    .a_p
+    {
+       font-family: Tahoma ;
+       font-weight: bold;
+       font-size: 30px;
+    }
+</style>
+
+<!-- TODO 5b-->
+
+<p class="b_p"> 
+    Biggest Deals of the Year!
+    <br>
+     <span class="b_span">
+         Sales end Tuesday
+        </span>
+    </p>
+
+<style> 
+    .b_p
+    {
+       font-family: Arial ;
+       font-weight: bold;
+       font-size: 26px;
+    }
+    .b_span
+    {
+        font-family: Arial;
+        color: red;
+        font-size: 16px;
+        font-style: italic;
+        line-height:24px;
+    }
+</style>
+
+<br>
+
+<!-- TODO 5c-->
+ <p class="c_p">
+    <span class="c_title_span">
+HTML CSS Course
+    </span>
+<br>
+    <span class="c_sous_titre_span" >
+Beginner to Pro
+    </span>
+<br>
+<br>
+In this course, we'll learn the skills <br> you need to become a developer.
+<br>  
+<br>
+    <span class="button_span">
+Get Started
+    </span>
+ </p>
+
+ <style>
+    .c_title_span
+    {
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        font-family: Verdana;
+    }
+    .c_sous_titre_span
+    {
+        font-size: 16px;
+        color: #706a6a;
+        font-weight: normal;
+        line-height: 22px;
+        font-family: Verdana;
+
+    }
+    .c_p
+    {
+        font-family: Verdana;
+        font-size: 16px;
+    }
+    .button_span
+    {
+        background-color: green;
+        color: white;
+        font-family: Verdana;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 6px;
+        font-size: 12px;
+    }
+
+ </style>
+ <br>
+ <br>
+ <br>
+ <!-- TODO 5d-->
+  <p class="d_p">
+Shopping for your business ?
+<br>
+    <span class="second_title_span">
+See how Apple at Work can help.
+    </span>
+<br>
+    <span class="last_span">
+Learn more >
+    </span>
+  </p>
+
+  <style>
+    .d_p
+    {
+        font-family: Arial;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .second_title_span
+    {
+        color: black;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 57px;
+        
+    }
+    .last_span
+    {
+        font-weight:normal;
+        font-size: 16;
+        color: blue;
+        line-height: 34px;
+        
+    }
+  </style>
+<!-- ? befor that try to find how to get a size of boldness of text-->
+  <br>
+  <br>
+
+  <!-- TODO 5e-->
+   <p class="e_p">
+<span class="first_span"> 
+    New
+</span>
+<br>
+<span class="second_span">
+    MacBook Pro
+</span>
+<br>
+Supercharged for pros.
+<br>
+<span class="third_span">
+   From &#36;1999
+</span>
+<br>
+<span class="fourth_span">
+    Buy
+</span>
+   </p>
+
+<style>
+    .e_p
+    {
+        color: black;
+        font-family: Arial;
+        font-size: 32px;
+        font-weight: bold; 
+        text-align: center;
+    }
+    .first_span
+    {
+        font-size: 18px;
+        color: red;
+        line-height: 34px;
+    }
+    .second_span
+    {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .third_span
+    {
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 36px;
+    }        
+    .fourth_span
+    {
+        background-color: blue;
+        font-size: 13px;
+        color: white;
+        padding-left: 17px;
+        padding-right: 17px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-radius: 23px;
+        line-height: 54px;
+    }
+</style>
+
+<br>
+<br>
+
+<!-- TODO 5f-->
+ <p class="f_p">
+ <span class="number_span">
+    1,049.61 
+ </span>
+ USD
+ <br>
+ <span class="second_number_span">
+    +18.05 (1.75%) today
+<br> 
+</span>
+ After hours 1,048.00
+ <span class="last_number_span">
+    -1.61 (0.15%)
+ </span>
+ </p>
+
+ <style>
+    .f_p
+    {
+        font-family: Arial;
+        color: #7b7b7b;
+        font-size: 16px;
+    }
+    .number_span
+    {
+        color: black;
+        font-size: 30px;
+    }
+    .second_number_span
+    {
+        color: green;
+        line-height: 29px;
+        font-size: 13px;
+    }
+    .last_number_span
+    {
+        color:red;
+        font-size:13px;
+    }
+
+ </style>
+
+<br>
+<br>
+
+<!-- TODO 5g -->
+
+<p class="g_p">
+<span class="first_line_span">
+    <span class="g_first_span">
+        freeCodeCamp.org
+    </span>
+
+    <span class="g_second_span">
+        @freeCodeCamp 1h
+    </span>
+</span>
+<br>
+As a web developer, you'll want to make your projects easy to use
+and navigate around.
+<br>
+<br>
+ Here  <span class="g_last_span">
+        @chp_it
+    </span> outlines the top skills new developers should have.
+</p>
+
+<style>
+    .g_p
+    {
+        color: black;
+        font-family: Arial;
+        font-size:16px;
+    }
+    .g_first_span
+    {
+        font-weight: bold;
+    }
+    .g_second_span
+    {
+        color:rgb(142, 135, 135);
+        margin-left:3px;
+    }
+    .g_last_span
+    {
+        color:blue;
+    }
+    .first_line_span
+    {
+        line-height:35px;
+    }
+    </style>
+
+<!-- TODO end of exercises-->

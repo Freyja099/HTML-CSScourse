@@ -1,0 +1,69 @@
+.number_p
+{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 19px;
+}
+
+/* TODO : 9a */
+
+.div_9a
+{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: red;
+}
+
+/* TODO : 9b */
+
+.div_9b
+{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: green;
+}
+
+/* TODO : 9c */
+
+.p_9c
+{
+    font-size: 17px;
+    font-family: Arial;
+    display: block;
+}
+.div_9c
+{
+    width: 300px;
+    border-style: solid;
+    border-width: 1px;
+    padding:8px 14px;
+    border-color: rgb(92, 89, 89);
+}
+
+/* TODO : 9d */
+.div_9d
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(39, 36, 36);
+    width: 400px;
+}
+.p_9d1
+{
+    color: white;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 9px;
+    font-size: 20px;
+}
+.p_9d2
+{
+    font-size: 16px;
+    padding-left: 9px;
+    padding-right: 2px;
+    padding-bottom: 13px ;
+    color: rgb(99, 97, 94);
+}

@@ -1,0 +1,84 @@
+.number_p
+{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 19px;
+}
+
+/* TODO 10 a,b,c,d */
+.img_10_a_to_d
+{
+    margin-top: 0px;
+    width: 400px;
+}
+
+/* TODO 10e */
+
+.div_all
+{
+    display: inline-block;
+    width: 188px;
+    margin-left: 30px;
+    box-shadow: 1px 3px 2px rgb(150, 150, 150);
+    margin-right: 3px;
+}
+.div_img
+{
+    display: block;
+}
+.big_img
+{
+    width: 188px;
+    height: 170px;
+    object-position: cover;
+}
+.div_information
+{
+    display: block;
+}
+.name_p
+{
+    margin-left: 8px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin-bottom: 3px;
+    margin-top: 4px;
+}
+.div_son
+{
+    display: block;
+    margin-bottom: 9px;
+    margin-top: 9px;
+}
+.icon_img
+{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    margin-left: 8px;
+    vertical-align: top;
+}
+.additional_info_p
+{
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 14.3px;
+    margin-bottom: 3px;
+    vertical-align: top;
+}
+.button_add_friend
+{
+    margin-left: 8px;
+    margin-bottom: 7px;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 13px;
+    border-radius: 3px;
+}

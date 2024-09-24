@@ -1,0 +1,162 @@
+<!-- * Session 10 : Nested Layouts technique -->
+
+
+<!-- *
+ * There are two types of layouts : 
+ * - Vertical layout where items are on top of each other
+ * - Horizontal layout where items are on the side of each other
+ * we can devise the div on multiple layouts , it could be a layout inside another ,...
+ * To create a layout we use 2 divs
+ * 1st div is the parent div which contains the child divs
+ * 2nd div is the child div which will contain the layout we want (for example a grid)
+ *-->
+
+ <!-- * Example -->
+
+ <!DOCTYPE html>
+ <html>
+    <head>
+<style>
+   .eg1_p1,
+   .eg1_p2,
+   .eg1_p3
+   {
+    width: 300px;
+    font-family: Roboto, Arial ;
+   }
+   /** I used a backup font (Arial) in case Roboto failed
+   * to load from Google then it will fall back to our backup font
+   * the whole thing is called a font stack it lets us set a backup fonts */
+   .eg1_p1
+   {
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 19px;
+   }
+   /* using bold in font-weight looks too bold that's why we change it to 500 which
+   * is a medium weight , it's already written in the google fonts when we upload the font*/
+   
+   /* The property to change the space between the lines is line-height */
+   
+   /* The space that the title took might not seem like the one on site but it does change if we adjust the tab
+   * we going to work on that later */ 
+   .eg1_p2,
+   .eg1_p3
+   {
+    font-size: 14px;
+    color: rgb(92, 88, 83);
+   }
+   .eg1_p3
+   {
+    margin-top: 6px;
+    
+   }
+   .eg1_p2
+   {
+    margin-bottom: 5px;
+   }
+   .eg1_img
+   {
+    width: 300px;
+   }
+   .div_all
+   {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 12px;
+   }
+   .eg1_div2_son1
+   {
+    display: inline-block;
+    width: 30px;
+    vertical-align: top;
+    margin-top: 10px;
+   }
+   .eg1_div2_son2
+   {
+    margin-top: 10px;
+    margin-left: 10px;
+    vertical-align: top;
+    width: 250px;
+    display: inline-block;
+   }
+   .eg1_channel1
+   {
+    width: 100%;
+    border-radius: 20px;
+   }
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+    <body>
+        <div class="div_all">
+
+       <div class="eg1_div1">
+        <img class="eg1_img" src="thumbnail/thumbnail-1.webp" >
+       </div> 
+
+       <div class="eg1_div2">
+         <div class="eg1_div2_son1">
+            <img class="eg1_channel1" src="thumbnail/channel-1.jpeg">
+         </div>
+         
+         <div class="eg1_div2_son2">
+            <p class="eg1_p1">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="eg1_p2">
+                Marques Brownlee
+            </p>
+            <p class="eg1_p3">
+                3.4M views &#183 6 months ago
+            </p>
+         </div>
+        
+       </div>
+
+    </div>
+
+
+    <div class="div_all">
+
+        <div class="eg1_div1">
+            <img class="eg1_img" src="thumbnail/thumbnail-2.webp">
+        </div>
+
+    <div class="eg1_div2">
+        <div class="eg1_div2_son1">
+             <img class="eg1_channel1"  src="thumbnail/channel-2.jpeg" > 
+        </div>
+
+           <div class="eg1_div2_son2"> 
+            <p class="eg1_p1">
+                Try Not To Laugh Challenge #9
+            </p>
+            <p class="eg1_p2">
+                Markiplier
+            </p>
+            <p class="eg1_p3">
+                19M views &#183 4 years ago
+            </p>
+           </div>
+    
+        </div>
+
+    </div>
+    </body>
+    
+ </html>
+
+ <!-- !
+  ! we gave the two vertical divs a width because the div by default have  a width of 
+  ! a 100% so we have to decrease the width so they appear next to each other 
+  ! -->

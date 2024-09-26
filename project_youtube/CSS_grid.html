@@ -1,0 +1,257 @@
+<!-- * Session 11 : CSS grid -->
+
+
+ <!-- *
+  * There's a problem using display: inline-block is that it has some
+  * alignment problems <!-- ! you already struggled with that in the previous part -->  
+  <!-- * 
+  * there's a solution other than using CSS grid we could remove the space between 
+  * the two divs : <div>...</div><div>... But as you can see it will be hard to read
+  * another problem is that the two divs aren't vertically aligned
+  * --> 
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Grid Practice
+    </title>
+</head>
+
+<body>
+    <div class="div_all" 
+    style=" display: grid ;
+            grid-template-columns: 100px 1fr;
+        ">
+        <div class="div_son1" style="background-color: lightpink;">div 1</div>
+        <div class="div_son2" style="background-color: lightsalmon;">div 2</div>
+    </div>
+</body>
+<!-- * 
+* A new methode of writing CSS is inside the opening tag and  write the style attribut
+* it's called inline CSS
+* it makes our html harder to read 
+* -->
+</html>
+
+<!-- *
+ * - A grid is a layout that has rows and columns 
+ * the first step is to set the display property to grid
+ * the second step is we need to set how many columns our grid has 
+ * we can do that by : grid-template-columns: we set values that will
+ * define how wide our grid columns are;(for eg if we have two divs like this eg we will enter two values)
+ * - the grid put the div inside the space we gave intead of taking the whole line
+ * (div are display block by default)
+ * - if one div is taller than the other grid will make them both the same size
+ * - if the we add a div without adding it's value it wraps around to a second row , so whenever we have more elements 
+ * than what we have specified in grid-template-columns, it will start from the beginning of the next row
+ * - we can use 1fr which is a special value , fr stands for free space
+ * it means to take up the remaining amount of space on the grid
+ * This 1fr is what we going to use to give the text the amount of space it needs whenever we change the dimensions of 
+ * tab (eg the titles on youtube) 
+ * - if there was two columns that had the
+ * -->
+   <br>
+
+ <!-- * To see the difference we going to work on the example of nested layout and change one of them to grid -->
+  <!-- ! Use dev tools to see the difference -->
+
+
+  <!DOCTYPE html>
+  <html>
+     <head>
+ <style>
+    .eg1_p1,
+    .eg1_p2,
+    .eg1_p3
+    {
+     width: 100%;
+     font-family: Roboto, Arial ;
+    }
+
+    .eg1_p1
+    {
+     width: 100%;
+     font-weight: 500;
+     font-size: 16px;
+     margin-top: 0px;
+     margin-bottom: 10px;
+     line-height: 19px;
+    }
+    .eg1_p3
+    {
+     font-size: 14px;
+     color: rgb(92, 88, 83);
+    }
+    .eg1_p3
+    {
+     margin-top: 6px;
+     
+    }
+    .eg1_p2
+    {
+     margin-bottom: 5px;
+    }
+    .eg1_img
+    {
+     width: 100%;
+    }
+    .div_all
+    {
+     width: 300px;
+     display: inline-block;
+     vertical-align: top;
+     margin-right: 12px;
+    }
+    .eg1_div2_son1
+    {
+     display: inline-block;
+     width: 30px;
+     vertical-align: top;
+     margin-top: 10px;
+    }
+    .eg1_div2_son2
+    {
+     margin-top: 10px;
+     margin-left: 10px;
+     vertical-align: top;
+     width: 250px;
+     display: inline-block;
+    }
+    .eg1_channel1
+    {
+     width: 100%;
+     border-radius: 20px;
+    }
+    .eg1_div2_modified
+    {
+        display: grid; /* we can remove inline block and replace it by grid */
+        grid-template-columns: 50px 1fr;
+    }
+ </style>
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+ 
+ </head>
+ 
+     <body>
+         <div class="div_all">
+ 
+        <div class="eg1_div1">
+         <img class="eg1_img" src="thumbnail/thumbnail-1.webp" >
+        </div> 
+ 
+        <div class="eg1_div2_modified">
+          <div class="eg1_div2_son1">
+             <img class="eg1_channel1" src="thumbnail/channel-1.jpeg">
+          </div>
+          
+          <div class="eg1_div2_son2">
+             <p class="eg1_p1">
+                 Talking Tech and AI with Google CEO Sundar Pichai!
+             </p>
+             <p class="eg1_p2">
+                 Marques Brownlee
+             </p>
+             <p class="eg1_p3">
+                 3.4M views &#183 6 months ago
+             </p>
+          </div>
+         
+        </div>
+ 
+     </div>
+ 
+ 
+     <div class="div_all">
+ 
+         <div class="eg1_div1">
+             <img class="eg1_img" src="thumbnail/thumbnail-2.webp">
+         </div>
+ 
+     <div class="eg1_div2">
+         <div class="eg1_div2_son1">
+              <img class="eg1_channel1"  src="thumbnail/channel-2.jpeg" > 
+         </div>
+ 
+            <div class="eg1_div2_son2"> 
+             <p class="eg1_p1">
+                 Try Not To Laugh Challenge #9
+             </p>
+             <p class="eg1_p2">
+                 Markiplier
+             </p>
+             <p class="eg1_p3">
+                 19M views &#183 4 years ago
+             </p>
+            </div>
+     
+         </div>
+ 
+     </div>
+     </body>
+     
+  </html>
+
+    </br>
+
+<!-- *Let's go back and create 3 grids to train for the youtube page -->
+
+<!DOCTYPE html>
+  <html>
+
+    <head>
+        <style>
+            .div_all_3eg
+            {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 20px;
+                row-gap: 20px;
+            }
+            .div_1,.div_3
+            {
+                background-color: lightgreen;
+                height: 200px;
+            }
+            .div_2
+            {
+                background-color: lightseagreen;
+                height: 200px;
+            }
+            .third_eg /* Adding this to see the bottom of the third eg clearly */
+            {
+                padding-bottom: 100px;
+            }
+        </style>
+    </head>
+
+    <body class="third_eg">
+        <div class="div_all_3eg">
+            <div class="div_1"> ONE </div>
+            <div class="div_2"> TWO </div>
+            <div class="div_3"> THREE </div>
+            <div class="div_2"> ONE </div>
+            <div class="div_1"> TWO </div>
+            <div class="div_2"> THREE </div>
+        </div>
+    </body>
+
+</html>
+
+
+  <!-- * 
+   * To create the space between the columns and rows we need two CSS properties 
+   * the first property is : column-gap, the second property is : row-gap.
+   * -->
+
+
+   <!-- !
+    ! If the pic on our website doesn't really resize it's because 
+    ! we forced a width to solve that we can just replace the value of the width by 100%
+    ! -->
+
+    <!-- * By using grid we can now remove unecessary lines like margin right , vertical align -->

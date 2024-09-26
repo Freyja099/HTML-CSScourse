@@ -1,0 +1,85 @@
+.number_p
+{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 19px;
+}
+
+/* TODO : application of the lesson */
+.div_grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.div_all
+    {
+    width: 100%;
+    display: inline-block;
+    
+    }
+.eg1_img
+    {
+     width: 100%;
+    }
+.eg1_div2
+    {
+        margin-top: 10px;
+        display: grid; 
+        grid-template-columns: 50px 1fr;
+    }
+.eg1_div2_son1
+    {
+     width: 30px;
+     vertical-align: top;
+    
+    }
+.eg1_channel1
+    {
+     width: 100%;
+     border-radius: 20px;
+    }
+.eg1_p1,
+.eg1_p2,
+.eg1_p3
+    {
+     width: 100%;
+     font-family: Roboto, Arial ;
+    }
+
+.eg1_p1
+    {
+     color: #333;
+     width: 100%;
+     font-weight: 500;
+     font-size: 16px;
+     margin-top: 0px;
+     margin-bottom: 10px;
+     line-height: 19px;
+    }
+.eg1_p3
+    {
+     font-size: 14px;
+     color: rgb(92, 88, 83);
+     margin-top: 6px;
+    }
+
+.eg1_p2
+    {
+     color: rgb(92, 88, 83);
+     margin-bottom: 5px;
+    }
+.div_all:hover
+{
+    cursor: pointer;
+}
+.eg1_p3:hover
+{
+    cursor: text;
+}
+a    /* *Adding this to change the color of the link and removing underline*/
+{
+    text-decoration: none;
+}

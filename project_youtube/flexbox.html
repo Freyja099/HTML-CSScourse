@@ -1,0 +1,53 @@
+<!-- * Session 12 : Flexbox -->
+
+<!-- * 
+ * Flexbox is another way to create layout, it is similar to CSS grid but it's more flexible 
+ * we use a container here too, the display property is set as flex ( display : flex ;) and 
+ * by using flex-direction : row ; this will make our elements align horizontally 
+ * the divs inside the container don't behave like block elements anymore they take as much 
+ * space they need like an inline-block element  
+ * it's another way to creating horizontal layouts while maintaining alignement
+ * To take the rest of space we have like fr here we use the property called flex
+ * flex : 1 ; 1 is equivalent to 1fr in grid (2 is 2fr)
+ * for the differences : the layout is more rigid for grid and flexbox has flexible layout 
+ * the value of flex is written in each div not like grid we wrote it all in grid-template-columns 
+ * and the divs follows the order of values 
+ * -->
+
+ <!DOCTYPE html>
+ <html>
+    <head>
+<title> Flexbox </title>
+    </head>
+    <body>
+        <div 
+        style = 
+        " display : flex";
+        "flex-direction : row";
+        >
+            <div style = "background-color: pink;">
+                div1
+            </div>
+            <div style = " background-color: lightseagreen;">
+                div2
+            </div>
+        </div>
+    </body>
+ </html>
+
+ <!-- *
+  * When we want a flexible layout depending on our content it's better to use flexbox
+  * - To change the placement of our divs we use the justify-content property
+  * justify-content: start ; to begin from the left side
+  * "end "; they will be aligned to the right side
+  * or "center"
+  * or "space-between" ; to spreads out our elements evenly across the horizontal space and 
+  * to make sure that there's equal amount of space between each element
+  * - align-items is a property to determine how elements are aligned vertically, the default value 
+  * is "stretch" which makes the elements stretching to fill up the vertical space 
+  * or use "start" they'll take up as much vertical space as they need to from the top of the container
+  * or " end " they'll take up as much vertical space as they need to starting from the bottom of the container
+  * or "center"
+  * 
+  * -->
+

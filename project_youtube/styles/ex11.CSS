@@ -1,0 +1,131 @@
+.number_p
+{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 19px;
+}
+
+/* TODO 11a */
+
+.div_all_11a
+{
+    display: grid;
+    grid-template-columns: 200px 75px;
+}
+.div1_11a
+{
+    background-color: lightblue;
+}
+.div2_11a
+{
+    background-color: lightpink;
+}
+
+
+/* TODO 11b */
+
+.div_all_11b
+{
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+}
+.div1_11b
+{
+    background-color: lightblue;
+}
+.div2_11b
+{
+    background-color: lightpink;
+}
+.div3_11b
+{
+    background-color: lightblue;
+}
+
+
+/* TODO 11c */
+
+.div_all_11c
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.div_11c
+{
+    background-color: lightpink;
+}
+
+/* TODO 11d */
+
+/* TODO 10e */
+
+.div_everything
+{
+    display: grid;
+    grid-template-columns: 188px 188px 188px;
+    column-gap: 20px;
+}
+
+.div_all
+{
+    box-shadow: 1px 3px 2px rgb(150, 150, 150);
+}
+.div_information
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.big_img
+{
+    width: 100%;
+    height: 170px;
+    object-position: cover;
+}
+
+.name_p
+{
+    margin-left: 8px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin-bottom: 3px;
+    margin-top: 4px;
+}
+.div_son
+{
+    margin-bottom: 9px;
+    margin-top: 9px;
+}
+.icon_img
+{
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    margin-left: 8px;
+    vertical-align: top;
+}
+.additional_info_p
+{
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 14.3px;
+    margin-bottom: 3px;
+    vertical-align: top;
+}
+.button_add_friend
+{
+    width: 100px;
+    margin-left: 8px;
+    margin-bottom: 7px;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 13px;
+    border-radius: 3px;
+}

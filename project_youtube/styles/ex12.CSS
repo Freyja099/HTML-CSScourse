@@ -1,0 +1,103 @@
+.number_p
+{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 19px;
+}
+
+/* TODO 12a */
+
+.div_12a
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.p_12a1
+{
+    width: 200px;
+    background-color: lightblue;
+}
+
+.p_12a2
+{
+    width: 75px;
+    background-color: lightpink;
+}
+
+/* TODO 12b */
+
+.p_12b1
+{
+    width: 50px;
+    background-color: lightblue;
+}
+.p_12b2
+{
+    flex: 1;
+    background-color: lightpink;
+}
+.p_12b3
+{
+    width: 75px;
+    background-color: lightblue;
+}
+
+/* TODO 12c */
+
+.div_12c
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.p_12c
+{
+    background-color: lightpink;
+    width: 50px;
+}
+
+/* TODO 12d */
+.div_12d
+{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+    width: 80%;
+    border: solid;
+    border-width: 1.5px;
+    border-color: rgb(161, 159, 159);
+}
+
+/* TODO 12e */
+.div_12e_container
+{
+    display: flex;
+    flex-direction: column;
+    border: 1.5px solid grey;
+    border-radius: 5px;
+}
+.div_12e_1 , .div_12e_2 , .div_12e_3
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.p_12e
+{
+    font-weight: bold;
+    margin-left: 13px;
+}
+.div_12e_num
+{
+    margin-right: 30px;
+    border:solid;
+    border-radius: 43%;
+    color: white;
+    background-color: blue;
+    padding:3px 10px ;
+    font-weight: bold;
+}
